@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DotsAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation is playing..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAA-j3-QR7" userLabel="progress Label">
+                                <rect key="frame" x="104" y="388" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.54085477941176474" green="0.56384803921568627" blue="0.59051776960784264" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4z-zz-df5">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.023529411764705882" green="0.81176470588235294" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HJY-3I-orS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33J-66-aKq" userLabel="start animation">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zco-fv-Oly"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start Animation">
+                                    <color key="titleColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAnimationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hih-Kb-4iu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_monster" translatesAutoresizingMaskIntoConstraints="NO" id="ggm-hk-OmZ">
+                                <rect key="frame" x="30" y="113.5" width="315" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="vXU-d9-7DF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS 10 Animations API" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uI-S4-jX3">
+                                <rect key="frame" x="101" y="413.5" width="173" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.35294117650000001" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e4z-zz-df5" secondAttribute="trailing" id="4IH-cA-XZf"/>
+                            <constraint firstAttribute="trailing" secondItem="ggm-hk-OmZ" secondAttribute="trailing" constant="30" id="6Jv-3C-c5t"/>
+                            <constraint firstItem="eAA-j3-QR7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="65" id="EH7-1M-gBG"/>
+                            <constraint firstItem="ggm-hk-OmZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="EL6-h4-LYq"/>
+                            <constraint firstItem="33J-66-aKq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Iow-KB-gHl"/>
+                            <constraint firstAttribute="trailing" secondItem="33J-66-aKq" secondAttribute="trailing" id="OWV-M8-xoN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e4z-zz-df5" secondAttribute="bottom" id="Snh-kC-Dla"/>
+                            <constraint firstItem="9uI-S4-jX3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TYZ-L1-KeW"/>
+                            <constraint firstItem="e4z-zz-df5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TrI-GQ-2RD"/>
+                            <constraint firstItem="ggm-hk-OmZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="a2q-iA-dtg"/>
+                            <constraint firstItem="eAA-j3-QR7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ad6-X0-h0f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="33J-66-aKq" secondAttribute="bottom" id="nCV-MY-AoE"/>
+                            <constraint firstItem="9uI-S4-jX3" firstAttribute="top" secondItem="ggm-hk-OmZ" secondAttribute="bottom" id="nVd-lK-r0N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ProgressLabel" destination="eAA-j3-QR7" id="abT-PR-aH0"/>
+                        <outlet property="descriptionLabel" destination="9uI-S4-jX3" id="IE4-YU-gFd"/>
+                        <outlet property="fakeButtonView" destination="e4z-zz-df5" id="H7k-fk-RbC"/>
+                        <outlet property="logoImageView" destination="ggm-hk-OmZ" id="LkM-0Q-8AN"/>
+                        <outlet property="progressLabel" destination="eAA-j3-QR7" id="h9j-ov-JVV"/>
+                        <outlet property="startButton" destination="33J-66-aKq" id="rLv-VF-ecM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_monster" width="504" height="356"/>
+    </resources>
+</document>
