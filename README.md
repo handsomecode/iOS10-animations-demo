@@ -1,6 +1,6 @@
 # iOS 10 Animation demo
 
-**DotsAnimation sample** is a sequence of series of different, separate animations, created to demonstrate usage iOS 10 Animations API, described in [the article](http://handsome.is/crafting-delightful-animations-in-ios-10/).
+**DotsAnimation sample** is a sequence of series of different, separate animations, created to demonstrate usage of iOS 10 Animations API, described in [the article](http://handsome.is/crafting-delightful-animations-in-ios-10/).
 
 ![Dots Animation Gif](https://d2ppvlu71ri8gs.cloudfront.net/items/2m1L241x2e3s092S2p3Q/dots_animation.gif?v=3fa17e11 "Dots Animation")
 
